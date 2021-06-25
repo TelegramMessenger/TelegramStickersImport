@@ -1,0 +1,16 @@
+PODS:
+  - TelegramStickersImport (1.0.0)
+
+DEPENDENCIES:
+  - TelegramStickersImport (from `../`)
+
+EXTERNAL SOURCES:
+  TelegramStickersImport:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TelegramStickersImport: 698b710af388390af9758e918e1b04660a42c42b
+
+PODFILE CHECKSUM: eff19abdbcf691e1c2d33dfb25329922a5b6e1f7
+
+COCOAPODS: 1.10.1

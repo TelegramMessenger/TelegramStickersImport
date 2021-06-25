@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ExampleController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Telegram Stickers Import Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT9-MU-nZf">
+                                <rect key="frame" x="16.583545036911914" y="49.000000000000114" width="379.00000000000011" height="89.999999999999915"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6Y-i5-CY5">
+                                <rect key="frame" x="110" y="774" width="154" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Send to Telegram"/>
+                                <connections>
+                                    <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XhE-t0-h0p"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sKW-Ve-qrx">
+                                <rect key="frame" x="95" y="367" width="331.33333333333326" height="512"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="5SU-fE-S7u">
+                                        <rect key="frame" x="0.0" y="0.0" width="100.33333333333333" height="512"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="2zG-jB-Wz4">
+                                        <rect key="frame" x="115.33333333333331" y="0.0" width="100.66666666666669" height="512"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s-3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qdo-dM-FWr">
+                                        <rect key="frame" x="230.99999999999997" y="0.0" width="100.33333333333334" height="512"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HJK-Da-aDe">
+                                <rect key="frame" x="128" y="147" width="157" height="32"/>
+                                <segments>
+                                    <segment title="Static"/>
+                                    <segment title="Animated"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="p8s-6r-A4w"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sKW-Ve-qrx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.85" id="ElO-9G-VLM"/>
+                            <constraint firstItem="fT9-MU-nZf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.971795" id="SEi-AF-0uo"/>
+                            <constraint firstItem="w6Y-i5-CY5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dBI-Ty-daf"/>
+                            <constraint firstItem="HJK-Da-aDe" firstAttribute="top" secondItem="fT9-MU-nZf" secondAttribute="bottom" constant="20" id="diw-bd-yWA"/>
+                            <constraint firstItem="fT9-MU-nZf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49.000000000000114" id="gyq-To-lzr"/>
+                            <constraint firstItem="HJK-Da-aDe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="i9a-Cb-w3L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w6Y-i5-CY5" secondAttribute="bottom" constant="64" id="iih-Rc-UGM"/>
+                            <constraint firstItem="sKW-Ve-qrx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vQD-ne-Tea"/>
+                            <constraint firstItem="sKW-Ve-qrx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xmE-6g-xg5"/>
+                            <constraint firstItem="fT9-MU-nZf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zPm-Co-qLN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="preview1" destination="5SU-fE-S7u" id="227-ZL-qa4"/>
+                        <outlet property="preview2" destination="2zG-jB-Wz4" id="spN-nt-zAY"/>
+                        <outlet property="preview3" destination="Qdo-dM-FWr" id="Xjn-qO-OdE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="s-1.png" width="512" height="512"/>
+        <image name="s-2.png" width="512" height="512"/>
+        <image name="s-3.png" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

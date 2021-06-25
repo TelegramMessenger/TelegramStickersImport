@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0978BBEA268243EA00C211A9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978BBE9268243EA00C211A9 /* Helpers.swift */; };
+		0EEADA514A92AABAC189CA4B83947719 /* Limits.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D0DBDF1E9A0B66E939997009B54901 /* Limits.swift */; };
+		2F75CE5E17FEFED56DBF4DB2C32C02D2 /* StickerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3718DFA704252EBA643FD615B651C24 /* StickerSet.swift */; };
+		3962E4F7794F4D0BF666917232F836AC /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DFBEF6E1D25033A15DEE9DAC15A1EC /* Sticker.swift */; };
+		6A08D94767A69F92AB7EE5F98A42CB1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		79ED347873D922C963FDE289890268BE /* TelegramStickersImport-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A2272924BBAE648CD0A8DE02F8AF41 /* TelegramStickersImport-dummy.m */; };
+		83EB89424B1D8A783453F82792659246 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDA38C63E5C55287F2902E9205FE1ECF /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */; };
+		DE9B2B3CBD4DB94D425E5CAA73379470 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E34B108847BF74795D6DABA40EE5CB5F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969402C77A5032812A5B57468E415A23 /* Errors.swift */; };
+		EBBAAE80AEC895BB826943F0D53179D3 /* TelegramStickersImport-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABD2F053212FC3BF42DF95766C1E1AE /* TelegramStickersImport-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF523B5169BDAE8C9D6B3D0CC63ABE32 /* IPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBE0A869A0F4A9A976EEA8099160B1D /* IPC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD6866D659E69963E180DBB169EC924C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 237833C81D9F26DD9DE04368B8483FAA;
+			remoteInfo = TelegramStickersImport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0978BBE9268243EA00C211A9 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Source/Helpers.swift; sourceTree = "<group>"; };
+		0BBE0A869A0F4A9A976EEA8099160B1D /* IPC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IPC.swift; path = Source/IPC.swift; sourceTree = "<group>"; };
+		1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		28FF86D96A4BD00910B59E289C0D8A7E /* TelegramStickersImport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TelegramStickersImport.debug.xcconfig; sourceTree = "<group>"; };
+		2ABD2F053212FC3BF42DF95766C1E1AE /* TelegramStickersImport-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TelegramStickersImport-umbrella.h"; sourceTree = "<group>"; };
+		30ACF153A2E8F29E15E19B036663A042 /* TelegramStickersImport.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TelegramStickersImport.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Info.plist"; sourceTree = "<group>"; };
+		35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		37A2272924BBAE648CD0A8DE02F8AF41 /* TelegramStickersImport-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TelegramStickersImport-dummy.m"; sourceTree = "<group>"; };
+		441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66DFBEF6E1D25033A15DEE9DAC15A1EC /* Sticker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sticker.swift; path = Source/Sticker.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
+		7EEE2FB8DCB9FFB9CDF2350A8A7F653C /* TelegramStickersImport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TelegramStickersImport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EBAEF6EFE0026920999815AE81992C /* TelegramStickersImport-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TelegramStickersImport-prefix.pch"; sourceTree = "<group>"; };
+		866AABA0C29599EE6809EF9E57E990A6 /* TelegramStickersImport.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TelegramStickersImport.modulemap; sourceTree = "<group>"; };
+		868ABF72A9C5B72CF504EEC4ECFA0656 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		903B0B211391C21B549C6CF60567351C /* TelegramStickersImport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TelegramStickersImport.release.xcconfig; sourceTree = "<group>"; };
+		969402C77A5032812A5B57468E415A23 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Source/Errors.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
+		B3718DFA704252EBA643FD615B651C24 /* StickerSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StickerSet.swift; path = Source/StickerSet.swift; sourceTree = "<group>"; };
+		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
+		D8D0DBDF1E9A0B66E939997009B54901 /* Limits.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Limits.swift; path = Source/Limits.swift; sourceTree = "<group>"; };
+		EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2E408FA3E49FC45D2CBBF5124D42084 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F61A2C4A3ED85E6711AA5FB99B840D89 /* TelegramStickersImport-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TelegramStickersImport-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A1E62FC11C803B1C5A096CB4CBC1B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A08D94767A69F92AB7EE5F98A42CB1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC64B867881ED89C6D5250CEDB261249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9B2B3CBD4DB94D425E5CAA73379470 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EA57715346CB31D90520D850ABD02E9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				868ABF72A9C5B72CF504EEC4ECFA0656 /* LICENSE */,
+				F2E408FA3E49FC45D2CBBF5124D42084 /* README.md */,
+				30ACF153A2E8F29E15E19B036663A042 /* TelegramStickersImport.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5AB9707B8B16546A1483AF30C7260DD7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				866AABA0C29599EE6809EF9E57E990A6 /* TelegramStickersImport.modulemap */,
+				37A2272924BBAE648CD0A8DE02F8AF41 /* TelegramStickersImport-dummy.m */,
+				F61A2C4A3ED85E6711AA5FB99B840D89 /* TelegramStickersImport-Info.plist */,
+				84EBAEF6EFE0026920999815AE81992C /* TelegramStickersImport-prefix.pch */,
+				2ABD2F053212FC3BF42DF95766C1E1AE /* TelegramStickersImport-umbrella.h */,
+				28FF86D96A4BD00910B59E289C0D8A7E /* TelegramStickersImport.debug.xcconfig */,
+				903B0B211391C21B549C6CF60567351C /* TelegramStickersImport.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TelegramStickersImport";
+			sourceTree = "<group>";
+		};
+		6742A14ADFFE5CDFE263D4EC60E3C435 /* TelegramStickersImport */ = {
+			isa = PBXGroup;
+			children = (
+				969402C77A5032812A5B57468E415A23 /* Errors.swift */,
+				0BBE0A869A0F4A9A976EEA8099160B1D /* IPC.swift */,
+				D8D0DBDF1E9A0B66E939997009B54901 /* Limits.swift */,
+				66DFBEF6E1D25033A15DEE9DAC15A1EC /* Sticker.swift */,
+				B3718DFA704252EBA643FD615B651C24 /* StickerSet.swift */,
+				1EA57715346CB31D90520D850ABD02E9 /* Pod */,
+				5AB9707B8B16546A1483AF30C7260DD7 /* Support Files */,
+				0978BBE9268243EA00C211A9 /* Helpers.swift */,
+			);
+			name = TelegramStickersImport;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9BDBD95ED116334D1B2835202D8D3060 /* Pods-Example */ = {
+			isa = PBXGroup;
+			children = (
+				35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */,
+				441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */,
+				EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */,
+				D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */,
+				AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */,
+				31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */,
+				7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */,
+				B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */,
+				243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */,
+			);
+			name = "Pods-Example";
+			path = "Target Support Files/Pods-Example";
+			sourceTree = "<group>";
+		};
+		AD3AC648589CD22D0CC167A0C8F57D41 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6742A14ADFFE5CDFE263D4EC60E3C435 /* TelegramStickersImport */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CE2E825F08D3AD0FD76E6D78D7512ED0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BDBD95ED116334D1B2835202D8D3060 /* Pods-Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				AD3AC648589CD22D0CC167A0C8F57D41 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				ED8A2FA9FB56D0AEDEC24D373057CA13 /* Products */,
+				CE2E825F08D3AD0FD76E6D78D7512ED0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED8A2FA9FB56D0AEDEC24D373057CA13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */,
+				7EEE2FB8DCB9FFB9CDF2350A8A7F653C /* TelegramStickersImport.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		54FE76D5AFCD2ECA7A3ECEB779C3A482 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBAAE80AEC895BB826943F0D53179D3 /* TelegramStickersImport-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E379EFD850D928D41180DB4994D72209 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83EB89424B1D8A783453F82792659246 /* Pods-Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7923D2D7F5662D5C6BC60D49994240B8 /* Build configuration list for PBXNativeTarget "Pods-Example" */;
+			buildPhases = (
+				E379EFD850D928D41180DB4994D72209 /* Headers */,
+				E0911282C12A7F8059E8D5C8DE61287B /* Sources */,
+				3A1E62FC11C803B1C5A096CB4CBC1B24 /* Frameworks */,
+				6A680A40483355478BFF5ACED206EE00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56C6217F1CA02430B992F49A1C0D2EF7 /* PBXTargetDependency */,
+			);
+			name = "Pods-Example";
+			productName = "Pods-Example";
+			productReference = 1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		237833C81D9F26DD9DE04368B8483FAA /* TelegramStickersImport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C7D68F02B687ED011593DBFB3F417D7 /* Build configuration list for PBXNativeTarget "TelegramStickersImport" */;
+			buildPhases = (
+				54FE76D5AFCD2ECA7A3ECEB779C3A482 /* Headers */,
+				33AA2631E3B3D787C90AD1E1C96F1F78 /* Sources */,
+				FC64B867881ED89C6D5250CEDB261249 /* Frameworks */,
+				34538A42916285335E3E08FB0E32D124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelegramStickersImport;
+			productName = TelegramStickersImport;
+			productReference = 7EEE2FB8DCB9FFB9CDF2350A8A7F653C /* TelegramStickersImport.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = ED8A2FA9FB56D0AEDEC24D373057CA13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */,
+				237833C81D9F26DD9DE04368B8483FAA /* TelegramStickersImport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34538A42916285335E3E08FB0E32D124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A680A40483355478BFF5ACED206EE00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33AA2631E3B3D787C90AD1E1C96F1F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B108847BF74795D6DABA40EE5CB5F /* Errors.swift in Sources */,
+				0978BBEA268243EA00C211A9 /* Helpers.swift in Sources */,
+				EF523B5169BDAE8C9D6B3D0CC63ABE32 /* IPC.swift in Sources */,
+				0EEADA514A92AABAC189CA4B83947719 /* Limits.swift in Sources */,
+				3962E4F7794F4D0BF666917232F836AC /* Sticker.swift in Sources */,
+				2F75CE5E17FEFED56DBF4DB2C32C02D2 /* StickerSet.swift in Sources */,
+				79ED347873D922C963FDE289890268BE /* TelegramStickersImport-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0911282C12A7F8059E8D5C8DE61287B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA38C63E5C55287F2902E9205FE1ECF /* Pods-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56C6217F1CA02430B992F49A1C0D2EF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TelegramStickersImport;
+			target = 237833C81D9F26DD9DE04368B8483FAA /* TelegramStickersImport */;
+			targetProxy = AD6866D659E69963E180DBB169EC924C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E6B8FF26F40217B8C70913554D8DC91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F884C41BC8965A3FAA9A1ECF76D89A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FCB0B97679BD37144EBDEF24E029F59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 903B0B211391C21B549C6CF60567351C /* TelegramStickersImport.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TelegramStickersImport/TelegramStickersImport-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TelegramStickersImport/TelegramStickersImport-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TelegramStickersImport/TelegramStickersImport.modulemap";
+				PRODUCT_MODULE_NAME = TelegramStickersImport;
+				PRODUCT_NAME = TelegramStickersImport;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FCD26C8EF3351C5E9155AC7AF93E8CCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28FF86D96A4BD00910B59E289C0D8A7E /* TelegramStickersImport.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TelegramStickersImport/TelegramStickersImport-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TelegramStickersImport/TelegramStickersImport-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TelegramStickersImport/TelegramStickersImport.modulemap";
+				PRODUCT_MODULE_NAME = TelegramStickersImport;
+				PRODUCT_NAME = TelegramStickersImport;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C7D68F02B687ED011593DBFB3F417D7 /* Build configuration list for PBXNativeTarget "TelegramStickersImport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD26C8EF3351C5E9155AC7AF93E8CCB /* Debug */,
+				FCB0B97679BD37144EBDEF24E029F59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7923D2D7F5662D5C6BC60D49994240B8 /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B8FF26F40217B8C70913554D8DC91F /* Debug */,
+				F884C41BC8965A3FAA9A1ECF76D89A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

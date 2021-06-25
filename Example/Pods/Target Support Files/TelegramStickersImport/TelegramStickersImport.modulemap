@@ -1,0 +1,6 @@
+framework module TelegramStickersImport {
+  umbrella header "TelegramStickersImport-umbrella.h"
+
+  export *
+  module * { export * }
+}
