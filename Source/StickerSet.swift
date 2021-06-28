@@ -19,7 +19,7 @@ public class StickerSet {
 
         - Parameters:
             - software: Data of the sticker
-            - isAnimated: Associated emojis of the sticker
+            - isAnimated: Whether the sticker set consists of animated stickers
 
         - Returns: A sticker set.
         */
