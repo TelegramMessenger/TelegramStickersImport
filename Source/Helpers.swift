@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 public extension Sticker.StickerData {
     init?(image: UIImage) {

@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 /// A sticker set
 public class StickerSet {
