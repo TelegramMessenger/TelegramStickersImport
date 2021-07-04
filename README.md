@@ -45,7 +45,7 @@ import TelegramStickersImport
 let stickerSet = StickerSet(software: "Example Software", isAnimated: false)
 let yourStickerImage = UIImage()
 if let stickerData = Sticker.StickerData(image: yourStickerImage) {
-    try? staticStickerSet.addSticker(data: .image(pngData), emojis: ["😎"])
+    try? staticStickerSet.addSticker(data: .image(stickerData), emojis: ["😎"])
 }
 stickerSet.import()
 ```
