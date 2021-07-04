@@ -47,7 +47,7 @@ let yourStickerImage = UIImage()
 if let stickerData = Sticker.StickerData(image: yourStickerImage) {
     try? stickerSet.addSticker(data: .image(stickerData), emojis: ["😎"])
 }
-stickerSet.import()
+try? stickerSet.import()
 ```
  
 ## License
