@@ -142,6 +142,8 @@ public class StickerSet {
         }
         result["stickers"] = stickers
         
-        let _ = IPC.send(json: result)
+        if !IPC.send(json: result) {
+            throw StickersError.telegramNotInstalled
+        }
     }
 }

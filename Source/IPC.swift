@@ -29,6 +29,8 @@ struct IPC {
             } else {
                 UIApplication.shared.openURL(ImportURL)
             }
+        } else {
+            return false
         }
         
         return true

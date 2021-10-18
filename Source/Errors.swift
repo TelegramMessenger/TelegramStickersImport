@@ -6,4 +6,5 @@ public enum StickersError: Error {
     case countLimitExceeded
     case dataTypeMismatch
     case setIsEmpty
+    case telegramNotInstalled
 }
