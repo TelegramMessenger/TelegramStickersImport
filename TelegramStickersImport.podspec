@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "TelegramStickersImport"
-  s.version          = "1.0.0"
+  s.version          = "1.1.0"
   s.summary          = "TelegramStickersImport helps your users import third-party programaticaly created sticker sets into Telegram Messenger for iOS."
   s.homepage         = "https://github.com/TelegramMessenger/TelegramStickersImport"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

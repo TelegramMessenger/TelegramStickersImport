@@ -4,6 +4,8 @@ import TelegramStickersImport
 class ExampleController: UIViewController {
     private var staticStickerSet: StickerSet?
     private var animatedStickerSet: StickerSet?
+    private var videoStickerSet: StickerSet?
+    
     private var selectedStickerSet: StickerSet?
     
     @IBOutlet weak var preview1: UIImageView!
@@ -13,7 +15,9 @@ class ExampleController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let staticStickerSet = StickerSet(software: "TelegramStickersImport-Example", isAnimated: false)
+        let software = "TelegramStickersImport-Example"
+        
+        let staticStickerSet = StickerSet(software: software, type: .image)
         if let path = Bundle.main.path(forResource: "s-1", ofType: "png", inDirectory: nil), let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {
             try? staticStickerSet.addSticker(data: .image(data), emojis: ["👍", "😺"])
         }
@@ -25,7 +29,7 @@ class ExampleController: UIViewController {
         }
         self.staticStickerSet = staticStickerSet
         
-        let animatedStickerSet = StickerSet(software: "TGStickersImport-Example", isAnimated: true)
+        let animatedStickerSet = StickerSet(software: software, type: .animation)
         if let path = Bundle.main.path(forResource: "a-1", ofType: "tgs", inDirectory: nil), let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {
             try? animatedStickerSet.addSticker(data: .animation(data), emojis: ["😭"])
         }
@@ -36,6 +40,18 @@ class ExampleController: UIViewController {
             try? animatedStickerSet.addSticker(data: .animation(data), emojis: ["🤔"])
         }
         self.animatedStickerSet = animatedStickerSet
+        
+        let videoStickerSet = StickerSet(software: software, type: .video)
+        if let path = Bundle.main.path(forResource: "v-1", ofType: "webm", inDirectory: nil), let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {
+            try? videoStickerSet.addSticker(data: .video(data), emojis: ["😩"])
+        }
+        if let path = Bundle.main.path(forResource: "v-2", ofType: "webm", inDirectory: nil), let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {
+            try? videoStickerSet.addSticker(data: .video(data), emojis: ["😀"])
+        }
+        if let path = Bundle.main.path(forResource: "v-3", ofType: "webm", inDirectory: nil), let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {
+            try? videoStickerSet.addSticker(data: .video(data), emojis: ["😥"])
+        }
+        self.videoStickerSet = videoStickerSet
         
         self.selectedStickerSet = self.staticStickerSet
     }
@@ -53,6 +69,11 @@ class ExampleController: UIViewController {
                     self.preview1.image = UIImage(named: "a-1-thumb.png")
                     self.preview2.image = UIImage(named: "a-2-thumb.png")
                     self.preview3.image = UIImage(named: "a-3-thumb.png")
+                case 2:
+                    self.selectedStickerSet = self.videoStickerSet
+                    self.preview1.image = UIImage(named: "v-1-thumb.png")
+                    self.preview2.image = UIImage(named: "v-2-thumb.png")
+                    self.preview3.image = UIImage(named: "v-3-thumb.png")
                 default:
                     break
             }

@@ -18,7 +18,7 @@
 		DE9B2B3CBD4DB94D425E5CAA73379470 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E34B108847BF74795D6DABA40EE5CB5F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969402C77A5032812A5B57468E415A23 /* Errors.swift */; };
 		EBBAAE80AEC895BB826943F0D53179D3 /* TelegramStickersImport-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABD2F053212FC3BF42DF95766C1E1AE /* TelegramStickersImport-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF523B5169BDAE8C9D6B3D0CC63ABE32 /* IPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBE0A869A0F4A9A976EEA8099160B1D /* IPC.swift */; };
+		EF523B5169BDAE8C9D6B3D0CC63ABE32 /* TelegramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBE0A869A0F4A9A976EEA8099160B1D /* TelegramApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		0978BBE9268243EA00C211A9 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Source/Helpers.swift; sourceTree = "<group>"; };
-		0BBE0A869A0F4A9A976EEA8099160B1D /* IPC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IPC.swift; path = Source/IPC.swift; sourceTree = "<group>"; };
+		0BBE0A869A0F4A9A976EEA8099160B1D /* TelegramApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TelegramApp.swift; path = Source/TelegramApp.swift; sourceTree = "<group>"; };
 		1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		28FF86D96A4BD00910B59E289C0D8A7E /* TelegramStickersImport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TelegramStickersImport.debug.xcconfig; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				969402C77A5032812A5B57468E415A23 /* Errors.swift */,
-				0BBE0A869A0F4A9A976EEA8099160B1D /* IPC.swift */,
+				0BBE0A869A0F4A9A976EEA8099160B1D /* TelegramApp.swift */,
 				D8D0DBDF1E9A0B66E939997009B54901 /* Limits.swift */,
 				66DFBEF6E1D25033A15DEE9DAC15A1EC /* Sticker.swift */,
 				B3718DFA704252EBA643FD615B651C24 /* StickerSet.swift */,
@@ -304,7 +304,7 @@
 			files = (
 				E34B108847BF74795D6DABA40EE5CB5F /* Errors.swift in Sources */,
 				0978BBEA268243EA00C211A9 /* Helpers.swift in Sources */,
-				EF523B5169BDAE8C9D6B3D0CC63ABE32 /* IPC.swift in Sources */,
+				EF523B5169BDAE8C9D6B3D0CC63ABE32 /* TelegramApp.swift in Sources */,
 				0EEADA514A92AABAC189CA4B83947719 /* Limits.swift in Sources */,
 				3962E4F7794F4D0BF666917232F836AC /* Sticker.swift in Sources */,
 				2F75CE5E17FEFED56DBF4DB2C32C02D2 /* StickerSet.swift in Sources */,

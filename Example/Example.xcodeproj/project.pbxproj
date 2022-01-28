@@ -10,6 +10,12 @@
 		091DB72B2677CB21001E1909 /* s-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 091DB7282677CB21001E1909 /* s-2.png */; };
 		091DB72C2677CB21001E1909 /* s-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 091DB7292677CB21001E1909 /* s-3.png */; };
 		091DB72D2677CB21001E1909 /* s-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 091DB72A2677CB21001E1909 /* s-1.png */; };
+		09523BBB279ACA9900B61675 /* v-1.webm in Resources */ = {isa = PBXBuildFile; fileRef = 09523BB8279ACA9800B61675 /* v-1.webm */; };
+		09523BBC279ACA9900B61675 /* v-2.webm in Resources */ = {isa = PBXBuildFile; fileRef = 09523BB9279ACA9800B61675 /* v-2.webm */; };
+		09523BBD279ACA9900B61675 /* v-3.webm in Resources */ = {isa = PBXBuildFile; fileRef = 09523BBA279ACA9800B61675 /* v-3.webm */; };
+		09523BC1279ADB5B00B61675 /* v-2-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 09523BBE279ADB5B00B61675 /* v-2-thumb.png */; };
+		09523BC2279ADB5B00B61675 /* v-3-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 09523BBF279ADB5B00B61675 /* v-3-thumb.png */; };
+		09523BC3279ADB5B00B61675 /* v-1-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 09523BC0279ADB5B00B61675 /* v-1-thumb.png */; };
 		09B7F2C6267ABC9A00409F87 /* a-3.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 09B7F2C0267ABC9900409F87 /* a-3.tgs */; };
 		09B7F2C7267ABC9A00409F87 /* a-1.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 09B7F2C1267ABC9900409F87 /* a-1.tgs */; };
 		09B7F2C8267ABC9A00409F87 /* a-2-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B7F2C2267ABC9900409F87 /* a-2-thumb.png */; };
@@ -29,6 +35,12 @@
 		091DB7282677CB21001E1909 /* s-2.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "s-2.png"; sourceTree = "<group>"; };
 		091DB7292677CB21001E1909 /* s-3.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "s-3.png"; sourceTree = "<group>"; };
 		091DB72A2677CB21001E1909 /* s-1.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "s-1.png"; sourceTree = "<group>"; };
+		09523BB8279ACA9800B61675 /* v-1.webm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "v-1.webm"; sourceTree = "<group>"; };
+		09523BB9279ACA9800B61675 /* v-2.webm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "v-2.webm"; sourceTree = "<group>"; };
+		09523BBA279ACA9800B61675 /* v-3.webm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "v-3.webm"; sourceTree = "<group>"; };
+		09523BBE279ADB5B00B61675 /* v-2-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v-2-thumb.png"; sourceTree = "<group>"; };
+		09523BBF279ADB5B00B61675 /* v-3-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v-3-thumb.png"; sourceTree = "<group>"; };
+		09523BC0279ADB5B00B61675 /* v-1-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v-1-thumb.png"; sourceTree = "<group>"; };
 		097A714CADE6B892C51F7D27 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		09B7F2C0267ABC9900409F87 /* a-3.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a-3.tgs"; sourceTree = "<group>"; };
 		09B7F2C1267ABC9900409F87 /* a-1.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a-1.tgs"; sourceTree = "<group>"; };
@@ -90,6 +102,12 @@
 				091DB72A2677CB21001E1909 /* s-1.png */,
 				091DB7282677CB21001E1909 /* s-2.png */,
 				091DB7292677CB21001E1909 /* s-3.png */,
+				09523BC0279ADB5B00B61675 /* v-1-thumb.png */,
+				09523BB8279ACA9800B61675 /* v-1.webm */,
+				09523BBE279ADB5B00B61675 /* v-2-thumb.png */,
+				09523BB9279ACA9800B61675 /* v-2.webm */,
+				09523BBF279ADB5B00B61675 /* v-3-thumb.png */,
+				09523BBA279ACA9800B61675 /* v-3.webm */,
 				09DAE5142625D317005731EB /* AppDelegate.swift */,
 				09DAE5162625D317005731EB /* SceneDelegate.swift */,
 				09DAE5182625D317005731EB /* ExampleController.swift */,
@@ -177,13 +195,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09523BBB279ACA9900B61675 /* v-1.webm in Resources */,
 				091DB72C2677CB21001E1909 /* s-3.png in Resources */,
+				09523BC1279ADB5B00B61675 /* v-2-thumb.png in Resources */,
+				09523BC3279ADB5B00B61675 /* v-1-thumb.png in Resources */,
+				09523BBC279ACA9900B61675 /* v-2.webm in Resources */,
 				091DB72B2677CB21001E1909 /* s-2.png in Resources */,
 				09B7F2CB267ABC9A00409F87 /* a-3-thumb.png in Resources */,
+				09523BBD279ACA9900B61675 /* v-3.webm in Resources */,
 				09B7F2C7267ABC9A00409F87 /* a-1.tgs in Resources */,
 				09B7F2C6267ABC9A00409F87 /* a-3.tgs in Resources */,
 				09B7F2CA267ABC9A00409F87 /* a-2.tgs in Resources */,
 				09DAE5212625D318005731EB /* LaunchScreen.storyboard in Resources */,
+				09523BC2279ADB5B00B61675 /* v-3-thumb.png in Resources */,
 				091DB72D2677CB21001E1909 /* s-1.png in Resources */,
 				09B7F2C9267ABC9A00409F87 /* a-1-thumb.png in Resources */,
 				09DAE51E2625D318005731EB /* Assets.xcassets in Resources */,

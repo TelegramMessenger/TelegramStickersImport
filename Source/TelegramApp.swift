@@ -1,36 +1,32 @@
 import Foundation
 import UIKit
 
-struct IPC {
+public struct TelegramApp {
+    private static let URLScheme = "tg"
     private static let DataType = "org.telegram.third-party.stickerset"
     private static let ImportURL = URL(string: "tg://importStickers")!
     private static let ExpirationInterval = TimeInterval(60)
     
-    static func canSend() -> Bool {
-        return UIApplication.shared.canOpenURL(URL(string: "tg://")!)
+    public static func isInstalled() -> Bool {
+        return UIApplication.shared.canOpenURL(URL(string: "\(URLScheme)://")!)
     }
-    
-    static func send(json: [String: Any]) -> Bool {
-        let pasteboard = UIPasteboard.general
-        
+
+    static func send(json: [String: Any]) {
         guard let finalData = try? JSONSerialization.data(withJSONObject: json, options: []) else {
-            return false
+            return
         }
-        
+                
+        let pasteboard = UIPasteboard.general
         if #available(iOS 10.0, *) {
             pasteboard.setItems([[DataType: finalData]], options: [UIPasteboard.OptionsKey.localOnly: true, UIPasteboard.OptionsKey.expirationDate: NSDate(timeIntervalSinceNow: ExpirationInterval)])
         } else {
             pasteboard.setData(finalData, forPasteboardType: DataType)
         }
         
-        if canSend() {
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(ImportURL)
-            } else {
-                UIApplication.shared.openURL(ImportURL)
-            }
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(ImportURL)
+        } else {
+            UIApplication.shared.openURL(ImportURL)
         }
-        
-        return true
     }
 }

@@ -42,12 +42,12 @@ To import a sticker set of a single sticker to Telegram, add the following code 
 ```swift
 import TelegramStickersImport
  
-let stickerSet = StickerSet(software: "Example Software", isAnimated: false)
+let stickerSet = StickerSet(software: "Example Software", type: .image)
 let yourStickerImage = UIImage()
 if let stickerData = Sticker.StickerData(image: yourStickerImage) {
-    try? staticStickerSet.addSticker(data: .image(pngData), emojis: ["😎"])
+    try? stickerSet.addSticker(data: stickerData, emojis: ["😎"])
 }
-stickerSet.import()
+try? stickerSet.import()
 ```
  
 ## License

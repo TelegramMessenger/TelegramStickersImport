@@ -10,13 +10,26 @@ public class Sticker {
         
         /// Animated sticker TGS data
         case animation(Data)
-    
+        
+        /// Video sticker WebM VP9 data
+        case video(Data)
+        
         /// A Boolean value that determines whether the sticker data contains animation
         var isAnimated: Bool {
             switch self {
-                case .image:
+                case .image, .video:
                     return false
                 case .animation:
+                    return true
+            }
+        }
+        
+        /// A Boolean value that determines whether the sticker data is video
+        var isVideo: Bool {
+            switch self {
+                case .image, .animation:
+                    return false
+                case .video:
                     return true
             }
         }
@@ -28,13 +41,15 @@ public class Sticker {
                     return "image/png"
                 case .animation:
                     return "application/x-tgsticker"
+                case .video:
+                    return "video/webm"
             }
         }
         
         /// Sticker data
         var data: Data {
             switch self {
-                case let .image(data), let .animation(data):
+                case let .image(data), let .animation(data), let .video(data):
                     return data
             }
         }
